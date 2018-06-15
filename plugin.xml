@@ -70,7 +70,7 @@
             target-dir="src/com/charlesbodman/cordova/plugin/ironsource" />
         <framework src="src/android/ironsourceads.gradle" custom="true" type="gradleReference" />
         <framework src="com.google.android.gms:play-services-ads:+" />
-        <framework src="com.android.support:recyclerview-v7:25.3.1" />
+        <framework src="com.android.support:recyclerview-v7:27+" />
         <framework src="com.facebook.android:audience-network-sdk:4.99.0" />
     </platform>
 
