@@ -60,7 +60,7 @@
                 android:hardwareAccelerated="true"
                 android:theme="@android:style/Theme.Translucent" />
 
-                <activity android:label="@string/app_name" android:name="com.facebook.ads.AudienceNetworkActivity" />
+                <!-- <activity android:label="@string/app_name" android:name="com.facebook.ads.AudienceNetworkActivity" /> -->
                 <activity android:label="@string/app_name" android:name="com.unity3d.ads.adunit.AdUnitActivity" />
                 <activity android:label="@string/app_name" android:name="com.unity3d.ads.adunit.AdUnitSoftwareActivity" />
 
@@ -70,8 +70,8 @@
             target-dir="src/com/charlesbodman/cordova/plugin/ironsource" />
         <framework src="src/android/ironsourceads.gradle" custom="true" type="gradleReference" />
         <framework src="com.google.android.gms:play-services-ads:+" />
-        <framework src="com.android.support:recyclerview-v7:27+" />
-        <framework src="com.facebook.android:audience-network-sdk:4.28.2" />
+        <!-- <framework src="com.android.support:recyclerview-v7:27+" />
+        <framework src="com.facebook.android:audience-network-sdk:4.28.2" /> -->
     </platform>
 
     <platform name="ios">
