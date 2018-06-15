@@ -1,12 +1,22 @@
 cdvPluginPostBuildExtras.add({
 
-  repositories {
-    maven {
-      url "https://dl.bintray.com/ironsource-mobile/android-sdk"
-    }
+repositories {
+  maven {
+    url 'https://dl.bintray.com/ironsource-mobile/android-sdk'
   }
+  maven {
+    url 'https://dl.bintray.com/ironsource-mobile/android-adapters'
+  }
+// Fyber do not support pod at the moment
+}
+dependencies {
+    compile 'com.ironsource.sdk:mediationsdk:6.7.9@jar'
 
-  dependencies {
-    compile 'com.ironsource.sdk:mediationsdk:6.7.8@jar'
-  }
+// Add AdMob Network
+    compile 'com.ironsource.adapters:admobadapter:4.1.6@jar'
+// Add Facebook Network
+    compile 'com.ironsource.adapters:facebookadapter:4.1.5@jar'
+// Add UnityAds Network
+    compile 'com.ironsource.adapters:unityadsadapter:4.1.1@jar'
+}
 });
